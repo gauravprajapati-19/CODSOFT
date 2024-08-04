@@ -1,0 +1,673 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+* {
+    font-family: 'Quicksand', sans-serif;
+    font-optical-sizing: auto;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f2f5fc !important;
+}
+
+.my-container {
+    width: 1200px;
+    position: relative;
+    margin: 0 auto;
+    padding-top: 150px;
+    padding-bottom: 50px;
+}
+
+.my-container1 {
+    width: 1200px;
+    position: relative;
+    margin: 0 auto;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.my-container2 {
+    width: 1200px;
+    position: relative;
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.hide {
+    display: none !important;
+}
+
+.center {
+    align-items: center;
+    justify-content: center;
+}
+
+.white {
+    background-color: white;
+    width: 100%;
+}
+
+.button1 {
+    background-color: #864dff;
+    color: white;
+    border: 2px solid #864dff;
+    border-radius: 50px;
+    font-size: 17px;
+    height: 50px;
+    width: 150px;
+    cursor: pointer;
+    transition: 0.6s;
+}
+
+.button1:hover {
+    background-color: transparent;
+    color: #864dff;
+}
+
+.button2 {
+    background-color: transparent;
+    color: #864dff;
+    border: 2px solid #864dff;
+    border-radius: 50px;
+    font-size: 17px;
+    height: 50px;
+    width: 150px;
+    cursor: pointer;
+    transition: 0.6s;
+}
+
+.button2:hover {
+    background-color: #864dff;
+    color: white;
+}
+
+.button3 {
+    background-color: #864dff;
+    color: white;
+    border: 2px solid #864dff;
+    border-radius: 50px;
+    font-size: 17px;
+    height: 50px;
+    width: 150px;
+    cursor: pointer;
+    transition: 0.6s;
+    padding: 10px 15px;
+}
+
+.button3:hover {
+    background-color: transparent;
+    color: #864dff;
+}
+
+.navigation {
+    z-index: 1;
+    width: 100%;
+    position: fixed;
+    background-color: #f2f5fc;
+    top: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin: 0 auto;
+    height: 100px;
+    max-width: 1200px;
+}
+
+.navbar ul {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.navbar li {
+    display: inline-block;
+}
+
+.navbar li a {
+    padding: 20px;
+    text-decoration: none;
+    color: black;
+    transition: 0.5s;
+}
+
+.navbar li a:hover {
+    background-color: #864dff;
+    border-radius: 50px;
+    color: white;
+}
+
+.active {
+    color: white !important;
+    background-color: #864dff;
+    border-radius: 50px;
+}
+
+.logo {
+    color: black;
+    text-decoration: none;
+    font-size: 70px;
+    font-weight: 600;
+}
+
+.logo:hover {
+    color: black;
+    text-decoration: none;
+}
+
+.menu-btn {
+    display: none;
+    margin-right: 10px;
+}
+
+.menu-btn button {
+    width: 50px;
+    height: 40px;
+    padding: 0;
+    border-radius: 5px;
+    border: none;
+}
+
+.menu-btn button img {
+    width: 40px;
+    height: 30px;
+}
+
+.menu-list {
+    position: absolute;
+    right: 0;
+    transition: 1s;
+    background-color: transparent;
+    width: 100%;
+    z-index: 10;
+}
+
+.menu-close {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 5;
+}
+
+.menu-items {
+    position: relative;
+    right: 0px;
+    top: 0px;
+    height: 100%;
+    background-color: #d5e1ff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 15%);
+    z-index: 10;
+    transition: left 0.7s;
+}
+
+.menu-list li {
+    display: block;
+    padding: 30px 10px;
+}
+
+.menu-items {
+    padding: 0;
+    text-align: center;
+}
+
+.menu-items li a {
+    padding: 20px;
+    text-decoration: none;
+    color: black;
+    transition: 0.5s;
+}
+
+.menu-items li a:hover {
+    background-color: #864dff;
+    border-radius: 50px;
+    color: white;
+}
+
+.mobile {
+    width: 100%;
+    height: 100%;
+}
+
+.info {
+    width: 450px;
+    padding-left: 20px;
+}
+
+.search {
+    width: 400px;
+    height: 60px;
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 50px;
+}
+
+.search input {
+    width: 63%;
+    height: 90%;
+    padding: 0 20px;
+    border: none;
+    border-radius: 50px 0px 0px 50px;
+}
+
+.search input:focus {
+    outline: none;
+}
+
+.search button {
+    width: 33%;
+    height: 90%;
+}
+
+/* How does it work */
+
+.work {
+    text-align: center;
+    padding: 50px 100px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 15%);
+}
+
+.step {
+    text-align: center;
+}
+
+/* Additional Information */
+
+.information2 {
+    width: 80% !important;
+    margin: 0 auto;
+}
+
+.info-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.steps img {
+    margin: 0px 10px 0px 0px;
+    width: 5%;
+}
+
+.steps h6 {
+    display: inline;
+    width: 90%;
+}
+
+.steps ul {
+    padding-left: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .info-img,
+    .information2 {
+        padding-top: 50px;
+    }
+}
+
+/* How to send money */
+
+.money-steps {
+    padding: 50px !important;
+}
+
+.money-steps1 {
+    background-color: white;
+    padding: 0 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 15%);
+}
+
+@media screen and (max-width: 1020px) {
+    .money-steps {
+        padding: 30px !important;
+    }
+}
+
+@media screen and (max-width: 1001px) {
+    .money-steps {
+        padding: 20px !important;
+    }
+}
+
+/* Map DIV */
+
+.map-div-head {
+    text-align: center;
+}
+
+.map-div-head p {
+    width: 50%;
+    margin: auto;
+}
+
+.count {
+    text-align: center;
+}
+
+.map {
+    text-align: center;
+}
+
+.map img {
+    width: 100%;
+}
+
+.map p {
+    margin: auto;
+    width: 80%;
+}
+
+.country1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 50px;
+    background-color: #c9dbff;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+.country1 img {
+    width: 10%;
+    height: 40px;
+    display: inline-block;
+}
+
+.country1 h6 {
+    width: 70%;
+    display: inline-block;
+    margin: 0 !important;
+}
+
+/* Form Page */
+
+.form {
+    padding-left: 3rem !important;
+    padding-right: 3rem !important;
+}
+
+.form-div {
+    padding: 0 !important;
+}
+
+.connect img {
+    width: 100%;
+}
+
+.form-input {
+    padding: 20px;
+}
+
+.form-input input {
+    width: 100%;
+    padding: 10px 20px;
+    border: 1px solid grey;
+    border-radius: 10px;
+}
+
+.form-input input::placeholder {
+    color: black;
+}
+
+.form-input select {
+    width: 100%;
+    padding: 10px 20px;
+    border: 1px solid grey;
+    border-radius: 10px;
+}
+
+.form-input button {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.checkbox {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.checkbox input {
+    width: 5%;
+    top: 7px;
+    position: relative;
+}
+
+.checkbox label {
+    width: 90%;
+}
+
+/* Footer */
+
+.footer-div {
+    background-color: #182434;
+    border-radius: 30px 30px 0px 0px;
+}
+
+.footer hr {
+    height: 2px !important;
+    color: white;
+}
+
+.footer-links {
+    width: 90%;
+    padding: 0 50px !important;
+}
+
+.footer-links h6 {
+    color: white;
+}
+
+.footer-links hr {
+    height: 2px !important;
+    color: white;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    font-size: 12px;
+}
+
+.footer-links a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.f-head {
+    padding-bottom: 30px;
+}
+
+.f-foot {
+    height: 100px;
+}
+
+.follow a {
+    display: inline-block;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+
+/* Responsiveness Of The Page */
+/* 1400, 1200, 1000, 760, 580 */
+
+@media screen and (max-width: 1400px) {
+    .my-container,
+    .my-container1,
+    .my-container2 {
+        width: 1200px;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    .my-container,
+    .my-container1,
+    .my-container2 {
+        width: 1000px;
+    }
+
+    .info {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1020px) {
+    .my-container,
+    .my-container1,
+    .my-container2 {
+        width: 760px;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .my-container,
+    .my-container1,
+    .my-container2 {
+        width: 580px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .my-container,
+    .my-container1,
+    .my-container2 {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1220px) {
+    .search {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1030px) {
+    .navbar ul {
+        display: none;
+    }
+
+    .menu-btn {
+        display: inline-block;
+    }
+
+    .button1 {
+        width: 100px;
+        height: 40px;
+    }
+
+    .button2 {
+        width: 100px;
+        height: 40px;
+    }
+
+    .info {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 830px) {
+    .info {
+        padding: 0 20px;
+    }
+
+    .form {
+        padding-left: 30px !important;
+        padding-right: 30px !important;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .button1 {
+        width: 100px;
+        height: 30px;
+        font-size: 12px;
+    }
+
+    .button2 {
+        width: 100px;
+        height: 30px;
+        font-size: 12px;
+    }
+
+    .mobile {
+        margin-top: 30px;
+    }
+
+    .form {
+        padding-top: 30px !important;
+    }
+
+    .row {
+        /* width: 100% !important; */
+        margin: 0 auto !important;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .work {
+        padding: 50px 30px;
+    }
+
+    .money-steps {
+        padding: 30px !important;
+    }
+
+    .map-div {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .form-div {
+        padding: 0 !important;
+    }
+
+    .form-input {
+        padding: 10px 20px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .f-head {
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .f-foot {
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .map-div-head p {
+        width: 100%;
+    }
+
+    .map p {
+        width: 100%;
+    }
+}
+
+/* Progress Bar Styling */
+.progress-bar {
+    width: 100%;
+    padding: 2px;
+    border-radius: 50px;
+    z-index: 1;
+    background-color: #864dff !important;
+    margin-bottom: 20px;
+}
+
+.progress {
+    width: 95%;
+    border-radius: 50px !important;
+    background-color: white !important;
+    z-index: 2;
+}
